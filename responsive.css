@@ -1,0 +1,63 @@
+/*Ukuran Tablet */
+@media all and (max-width: 1000px) {
+    nav ul {
+        width: 50%;
+    }
+    
+    .character {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+}
+
+/*Ukuran Mobile */
+@media all and (max-width: 670px) {
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        width: 40%;
+        height: 70vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        z-index: -2;
+        background-color: black;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .menu-toggle {
+        display: flex;
+        right: 5%;
+    }
+
+    #jumbotron h1{
+        font-size: 40px;
+    }
+
+    .character {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .header-right {
+        display: none;
+      }
+
+    .menu-icon {
+        display : block;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+}
